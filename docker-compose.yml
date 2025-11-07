@@ -5,7 +5,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      shm_size: '2gb'
     container_name: white-paper-landing
+    mem_limit: 4g
     ports:
       - "8001:80"
     restart: unless-stopped
