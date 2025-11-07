@@ -1,0 +1,93 @@
+.technology {
+  padding: 6rem 2rem;
+  background: var(--light);
+}
+
+.technology-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.technology-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.technology-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.tech-badge {
+  background: #FFFFFF;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tech-badge:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15);
+}
+
+.tech-badge.ai {
+  background: rgba(102, 126, 234, 0.03);
+}
+
+.tech-badge.blockchain {
+  background: rgba(160, 174, 192, 0.03);
+}
+
+.tech-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark);
+  letter-spacing: -0.5px;
+}
+
+.tech-category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.tech-badge.ai .tech-category {
+  background: var(--accent);
+  color: white;
+}
+
+.tech-badge.blockchain .tech-category {
+  background: var(--mid-gray);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .technology {
+    padding: 4rem 1.5rem;
+  }
+
+  .technology-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .tech-badge {
+    padding: 1.25rem;
+  }
+
+  .tech-name {
+    font-size: 1.1rem;
+  }
+}
