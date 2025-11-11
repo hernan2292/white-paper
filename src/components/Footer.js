@@ -19,6 +19,7 @@ const Footer = () => {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-link">LinkedIn</a>
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="social-link">Twitter</a>
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-link">GitHub</a>
+              <a href="https://discord.gg/BCEFuJuQ" target="_blank" rel="noopener noreferrer" className="social-link">Discord</a>
             </div>
           </div>
 
@@ -44,8 +45,8 @@ const Footer = () => {
           <div className="footer-section">
             <h4>Contacto</h4>
             <ul className="contact-info">
-              <li>📧 contacto@whitepaper.ai</li>
-              <li>📱 WhatsApp Business</li>
+              <li>📧 <a href="mailto:whitepaper.dev.org@gmail.com" style={{color: 'inherit', textDecoration: 'none'}}>whitepaper.dev.org@gmail.com</a></li>
+              <li>💬 <a href="https://discord.gg/BCEFuJuQ" target="_blank" rel="noopener noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>Discord</a></li>
               <li>📍 Buenos Aires, Argentina</li>
               <li>🕒 Lun-Vie: 9:00-18:00 (GMT-3)</li>
             </ul>
